@@ -34,27 +34,77 @@
     </style>
 
     <h2>이미지 스프라이트</h2>
-    <div class="sp">이미지 스프라이트</div>
-    <a href="#" class="naver">Naver</a>
-    <a href="#" class="live">live</a>
+    <div class="img-g sp2">이미지스프라이트</div>
     <style>
-        .naver {
-            display: block;
-            width: 442px;height: 104px;
-            background-image: url(./images/sp_main.png);
-            background-repeat: no-repeat;
-            background-position: 0 -316px;
-            text-indent: -9999px;
-        }
-        .sp {
-            width: 312px;height: 321px;
+        .sp2 {
+            width: 312px;height: 312px;
             background-image: url(./images/sp_main.png);
             background-repeat: no-repeat;
             background-position: 0 0;
             text-indent: -9999px;
         }
     </style>
+    <!-- <div class="sp">이미지 스프라이트</div> -->
+    <a href="#" class="img-g naver">Naver</a>
+    <a href="#" class="img-g live">live</a>
+    <style>
+        .img-g {
+            display: block;
+            background-image: url(./images/sp_main.png);
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        }
+        .live {
+            width: 102px;height: 44px;
+            /* background: #000 url() 0 0 no-repeat; */
+            background: url(./images/sp_main.png) -312px -534px no-repeat;
 
+        }
+        .naver {
+            display: block;
+            width: 442px;height: 104px;
+            background-position: 0 -316px;
+        }
+        .sp {
+            width: 312px;height: 321px;
+            background-image: url(./images/sp_main.png);
+        }
+    </style>
+
+    <h2>background-attachment </h2>
+    <div class="bg-att"></div>
+    <style>
+        .bg-att {
+            width: 100%;
+            height: 200px;
+            background: url(./images/map.jpg) 0 0 no-repeat;
+            background-attachment: fixed;
+            background-size: 100% auto;
+        }
+    </style>
+
+    <h2>background-size</h2>
+    <div class="bg-size"></div>
+    <style>
+        .bg-size {
+            width: 600px;height: 300px;
+            background: #f333d1 url(./images/다운로드.jpeg) 0 0 no-repeat;
+            /* 배경 이미지를 꽉 채울 때 */
+            background-size: cover; 
+        }
+    </style>
+
+<div class="bg-size2"></div>
+<style>
+    .bg-size2 {
+        width: 600px;height: 300px;
+        background: #f333d1 url(./images/다운로드.jpeg) 0 0 no-repeat;
+        /* 영역 내 배경 이미지가 다 보이게 할 때 : 버튼 */
+        background-size: contain; 
+    }
+</style>
+
+<br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 </body>
 </html>
