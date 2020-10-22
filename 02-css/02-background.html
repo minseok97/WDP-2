@@ -88,14 +88,32 @@
     <style>
         .bg-size {
             width: 600px;height: 300px;
-            background: #f333d1 url(./images/다운로드.jpeg) 0 0 no-repeat;
-            /* 배경 이미지를 꽉 채울 때 */
+            background: #f333d1 url(./images/다운로드.jpeg) 50% no-repeat;
+            /* 배경 잘려나가도 캔버스에 이미지를 꽉 채울 때 */
             background-size: cover; 
         }
     </style>
-
+<br>
 <div class="bg-size2"></div>
+<br>
+<a href="#" class="link-light">라이트모드로 보기</a>
+<a href="#" class="link-light-m">라이트모드로 보기</a>
 <style>
+    .link-light-m {
+        display: block;
+        width: 200px; 
+        height: 30px;
+        background: url(./images/btn.png) 0 0 no-repeat;
+        text-indent: -9999px;
+        background-size: contain;
+    }
+    .link-light {
+        display: block;
+        width: 282px; 
+        height: 90px;
+        background: url(./images/btn.png) 0 0 no-repeat;
+        text-indent: -9999px;
+    }
     .bg-size2 {
         width: 600px;height: 300px;
         background: #f333d1 url(./images/다운로드.jpeg) 0 0 no-repeat;

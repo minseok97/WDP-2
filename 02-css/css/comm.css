@@ -4,6 +4,7 @@
     margin: 0; 
     padding: 0;
     list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .wrap {
@@ -20,6 +21,9 @@ header {
 header h1 {
     display: flex;
     align-items: center;
+}
+header h1 a {
+    font-family: 'Nanum Pen Script', cursive;
 }
 nav {
     display: flex;
