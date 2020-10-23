@@ -32,11 +32,37 @@ nav {
     display: flex;
     align-items: center;
 }
+nav {
+
+    position: relative;
+    z-index: 10000;
+}
 nav ul {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    /* width: 300px; */
 }
+.nav-depth1 li:first-child li::before {
+    display: inline-block;
+    content: '';
+    width: 5px;height: 5px;
+    background: blue;
+    vertical-align: middle;
+    margin: -4px 10px 0 0;
+}
+.nav-depth1 li li a::before {
+    content: "\f0da";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+.nav-depth2 {
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
 .slide {
     /* height: 300px; */
 }
