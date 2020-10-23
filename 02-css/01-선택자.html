@@ -7,9 +7,23 @@
 </head>
 <body>
     <h1>선택자</h1>
-
-    <ul>
-        <li>
+    <style>
+        ul li {
+            margin-bottom: 10px;
+            background: lightgray;
+        }
+        /* ul의 자식 중 li */
+        .nav-dep1 > li {
+            border: 5px solid blue;
+        }
+        .nav-dep1 > li > a {border: 5px solid green;}
+        ul li ul li {
+            background: tomato;
+        }
+        
+    </style>
+    <ul class="nav-dep1">
+        <li class="fst">
             <a href="#">menu1</a>
             <ul>
                 <li><a href="#">menu1-1</a></li>
@@ -26,7 +40,9 @@
         <li>
             <a href="#">menu3</a>
         </li>
-        <li><a href="#">menu4</a></li>
+        <li class="lst">
+            <a href="#">menu4</a>
+        </li>
     </ul>
 
 
