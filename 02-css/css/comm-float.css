@@ -54,3 +54,15 @@ header nav {
 footer {
     background: lightgray;
 }
+footer h1 {
+    float: left;
+    width: 10%;
+}
+footer .copyright {
+    float: left;
+    width: 30%;
+}
+footer .sns {
+    float: right;
+    width: 20%;
+}
