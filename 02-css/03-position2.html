@@ -54,21 +54,28 @@
     <hr>
     <h2>샘플</h2>
     <style>
+        .sec-thumb {
+            overflow: hidden;
+            width: 500px;
+            margin: auto;
+        }
         .list-thumb {
             overflow: hidden;
-            /* width: 500px; */
-            margin: 20px 0;
+            /* width: 520px; */
+            margin: 20px -10px;
+            background: red;
         }
         .list-thumb li {
             position: relative;
             float: left;
-            width: 30%;
-            margin-right: 5%;
+            width: 33.333%;
+            padding: 0 10px;
         }
-        .list-thumb li:last-child {
+        /* .list-thumb li:last-child {
             margin-right: 0;
-        }
+        } */
         .list-thumb a {
+            position: relative;
             display: block;
             height: 246px;
         }
@@ -91,6 +98,11 @@
         }
         .link-more {
             position: absolute;top: 0;right: 0;
+        }
+        .list-thumb a:hover p {
+            top: 0;
+            padding-top: 100px;
+            background: rgba(0, 0, 0, 0.8);
         }
     </style>
     <div class="sec-thumb">
