@@ -7,6 +7,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 .wrap {
@@ -41,19 +42,54 @@ header .nav-depth1 {
           justify-content: space-between;
 }
 
-header .nav-depth1 a {
+header .nav-depth1 > li > a {
   display: block;
   height: 100px;
   padding: 38px 30px 0;
 }
 
+header .nav-depth1 > li > a:hover {
+  border-bottom: 3px solid #333;
+}
+/* hover된 depth2 */
+header .nav-depth1 > li:hover .nav-depth2 {
+  /* display: block; */
+  height: 132px;
+}
+/* 일반 depth2 */
 header .nav-depth2 {
-  display: none;
+  /* display: none; */
+  overflow: hidden;
+  height: 0;
+  transition: height .5s;
+  background: #fff;
+}
+
+header .nav-depth2 a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+header .nav-depth2 a:hover {
+  background: #333;
+  color: #fff;
 }
 
 .slide {
+  overflow: hidden;
+  position: relative;
   height: 300px;
   background: rgba(255, 99, 71, 0.1);
+}
+.slide ul {
+  position: absolute;top: 0;left: 0;
+  display: flex;
+  width: 300%;
+}
+.slide li {
+  overflow: hidden;
 }
 
 .container {
