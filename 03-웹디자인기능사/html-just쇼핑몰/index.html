@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just쇼핑몰</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel = "stylesheet" href = "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
     <link rel="stylesheet" href="./css/comm.css">
 </head>
 <body>
@@ -63,9 +64,85 @@
                 <li><img src="./images/slide3.png" alt="더 작고 똑똑한 스마트 스피커 미니헥사"></li>
             </ul>
         </div>
-        <div class="container"></div>
-        <footer></footer>
+        <div class="container">
+            <div class="tab">
+                <!-- on 클래스가 있으면 활성화 -->
+                <section class="col1">
+                    <h2>공지사항</h2>
+                    <div class="cont">
+                        <ul>
+                            <li><a href="#">일상을 바꾸는헤이카카오 출시 이벤트 <span>2020-10-29</span></a></li>
+                            <li><a href="#">헤이카카오å를 부르고 커피 받자 <span>2020-10-29</span></a></li>
+                            <li><a href="#">10월 31일 정기정검 공지 <span>2020-10-29</span></a></li>
+                            <li><a href="#">카카오홈 출시 이벤트 <span>2020-10-29</span></a></li>
+                            <li><a href="#">카카오 채용 안내 <span>2020-10-29</span></a></li>
+                            <li><a href="#">[event] 헤이카카오를 부르고 커피 받자 <span>2020-10-29</span></a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="col4 on">
+                    <h2>갤러리</h2>
+                    <div class="cont">
+                        <ul>
+                            <li><a href="#"><img src="./images/ico1.svg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/ico2.svg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/ico4.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <section class="col2">
+                <h2>홍보배너</h2>
+                <div class="cont">
+                    <img src="./images/banner.jpg" alt="Life + AI We are everywhere">
+                </div>
+            </section>
+            <section class="col3">
+                <h2>주요링크 바로가기</h2>
+                <div class="cont">
+                    <a href="#">
+                        <img src="./images/ico1.svg" alt=""> 나의 계정
+                    </a>
+                    <a href="#">
+                        <img src="./images/ico2.svg" alt=""> 헤이 음악
+                    </a>
+                    <a href="#">
+                        <img src="./images/ico3.svg" alt=""> 계정 추가
+                    </a>
+                    <a href="#">
+                        <img src="./images/ico4.svg" alt=""> 헤이 클라우드
+                    </a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <h1><img src="./images/logo.png" alt="kakao i"></h1>
+            <div class="copyright">
+                <address>
+                    경기도 부천시 상동
+                    <br>
+                    © 2020 Kakao Enterprise. The Kakao i is a trademark of Kakaocorp.
+                </address>
+            </div>
+            <div class="sns">
+                <a href="#">kakaoTalk</a>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+            </div>
+        </footer>
     </div>
+
+    <div id="modal">
+        <div class="inner">
+            <img src="./images/modal.png" alt="언제 어디서나 “헤이카카오”를 불러주세요!">
+            <button>
+                <span class="blind">닫기</span>
+            </button>
+        </div>
+    </div> 
     
 </body>
 </html>
